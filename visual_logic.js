@@ -8,6 +8,8 @@
 
 'use strict';
 
+/* eslint no-use-before-define: 0 */
+
 (function() {
 
 // global variables/constants used by puzzles' functions
