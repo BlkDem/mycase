@@ -1,0 +1,721 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="823.1312348583718" scrolly="862" scale="0.5939794798318193">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="DxZyW_;i{*1_Esj^Mt0B" x="-1370" y="-1430">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="608.3575460330858" scrolly="625.4910057606512" scale="0.5939794798318193">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="y:j}INLE7G(g]}IbP+FW" type="">light</variable>
+      <variable id="r6,3{zWE%:;4p7(rP=5W" type="">rotation</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="Ao/Haul`r59r+}L:76/W" x="-990" y="-1010">
+      <value name="ID">
+        <shadow type="text" id="b]d7Eswc_`i=#Ay$F!+A">
+          <field name="TEXT">myTimer</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="#R948DNN)f5M-WV]T%b1">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id="6*?+`%xzm(phnI-~ie.2">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="d(j!6bQg3.:]t+yUS#xh">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="bf{-}$@iMq+$d:Fwy$AV">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="4JUbhzHz~ZL7~r2RAb1!" x="-430" y="-1030">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="gFy0l5UBd7l3cgNaYtf`">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="%]eyjw34o$pP5Rp#lq:d"/>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="qo:s+9tOZnB$#dR0rAD}">
+          <field name="ON_OFF">OFF</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="Y@wT}b+r^n}[:Yiy?f8i">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="variables_set" id="HdAUq{PdZ_5qyr`[_!G0">
+              <field name="VAR" id="r6,3{zWE%:;4p7(rP=5W">rotation</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="u/kXBJx8`Y_]YV5F/n=+">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="St#%TlOaIU-9G3MC7H;p" x="-990" y="-870">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="GyVEZGya[Uv~;c{5RNo+">
+          <field name="TEXT">rotate_on</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="{ec@CZkYse-G-RDlQWdR">
+          <value name="IF0">
+            <block type="logic_compare" id="O:RXZt*w;f]vqa{h^`+w">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="*:rx9Ah4JaTXQ+_)%}17">
+                  <field name="VAR" id="r6,3{zWE%:;4p7(rP=5W">rotation</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id=":C@E+|9x0TwwwbUgBYxr">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="autoRotateCamera" id=")IJyqemAg$#Pu9Rf,Dnl">
+              <field name="ON_OFF">OFF</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="Okud}Q[~unR_`;JD(ixF">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="fT_oK3s#ZZ#=P@B6I7d-">
+                  <field name="VAR" id="r6,3{zWE%:;4p7(rP=5W">rotation</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="?,utvO0bbmCgQ7eT~tzn">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="autoRotateCamera" id="NPK@KdS`eJG^J/vC!=Ds">
+              <field name="ON_OFF">ON</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="@e0yN?}zzt:cbs.z_JB8">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="iZg}a5kM68h3}{M|ZFtK">
+                  <field name="VAR" id="r6,3{zWE%:;4p7(rP=5W">rotation</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="cC20lo%.kxs/mguxIm/l">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="]mMN.-C3jL7gC}1Xz~K@" x="-430" y="-890">
+      <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+      <value name="VALUE">
+        <block type="math_number" id="[aZ+?8*6i}w9a,*}{:tZ">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="L:u5`6}-QOJ7-y$^{(?]">
+          <field name="VAR" id="r6,3{zWE%:;4p7(rP=5W">rotation</field>
+          <value name="VALUE">
+            <block type="logic_boolean" id="-{?O*R[/K:3?|ckFPaa+">
+              <field name="BOOL">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Dh]e-k9g2eJpGSz6OSee" x="-970" y="-590">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="]+y0b@VF+-6h1GEtsK#$">
+          <field name="TEXT">light_on</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="erqAUL)(7-wfsLmN-bYS">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="gP+Q^${#WVAf)CuX2H^v">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="{NVc@!D,o|0}yK6--_!i">
+                  <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="8H%vz]Ik|;@a0mTOriQ2">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="assignMaterial" id="QffH6*_^ul!1@8^VDBa;">
+              <value name="VALUE2">
+                <shadow type="materialList" id="OSAoSDrNsO%ZR7eU;-Cq">
+                  <field name="FIELDNAME">cooler_light_off</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="UPPgt%PE48R$,$F):@gC">
+                  <field name="FIELDNAME">cool_light1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setTimeout" id="9^Q+qJXeyv$wz-@rd2A%">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="YLuq78?*I[v830z[mIjh">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="J.45ZhYV~L,cwE(eDD?n">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="g-[}1MWZ8$[/^@kv3uze">
+                          <field name="FIELDNAME">cooler_light_off</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="1ggGz$E7r4/d9h+KLsBM">
+                          <field name="FIELDNAME">cool_light2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="e|yFP4PxxK@yjm+i,2+;">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="t~*0aMc-98~P{dd9n?|W">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="assignMaterial" id="n^5uow7J@+`xb#I}7t2!">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id=")u[fqC`Csb0@xmK!?#GE">
+                                  <field name="FIELDNAME">cooler_light_off</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id=";ytmyTYaDJ7}F00Xfnmm">
+                                  <field name="FIELDNAME">cool_light2</field>
+                                </shadow>
+                                <block type="groupList" id="ZF0^W_GZpF*VYV%NQQSe">
+                                  <field name="FIELDNAME">side-lights</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setTimeout" id="z?khW/s5QTYXZ4kaU6-O">
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="]T/qQcO*rPUUE6A0h=xA">
+                                      <field name="NUM">0.1</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="variables_set" id="uHCZBLw304_av69OR}RE">
+                                      <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                                      <value name="VALUE">
+                                        <block type="math_number" id="$V%5?iwWae$:xWd}e(!n">
+                                          <field name="NUM">1</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="assignMaterial" id="sdr/i)WYb,ib434lFn#?">
+              <value name="VALUE2">
+                <shadow type="materialList" id="4Zx0{clecV}9MA33oOIA">
+                  <field name="FIELDNAME">cooler_light</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="9RzYDEL7!1$evm-{#oCw">
+                  <field name="FIELDNAME">cool_light1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="cHe1e`kPBN%SH1B3bfVa">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="5q,6TmTOC^M}csx_WHl$">
+                      <field name="FIELDNAME">cooler_light</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="%~sgup@z!siU_gdxchqt">
+                      <field name="FIELDNAME">cool_light2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="4KUMGLfmt@$0W.Pbx1V-">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="2lT%x?MgB-^U^%-UL994">
+                          <field name="FIELDNAME">cooler_light</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">cool_light2</field>
+                        </shadow>
+                        <block type="groupList" id="sRp5BVo%scoi{^_Y*y3U">
+                          <field name="FIELDNAME">side-lights</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="z#S^!Z2-XhVlS3[MRB[i">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="4a/0+we_?Vu*gbU6[2=[">
+                              <field name="NUM">0.1</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="K_o6kX`re*UX1jCYlwc|">
+                              <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                              <value name="VALUE">
+                                <block type="math_number" id="N,ef*R[crJWos]HC#oAx">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="tf/c;`Czt*MAd%.PB84." x="-230" y="-610">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="mS%pbVg%jmovQlk!}`xX">
+          <field name="TEXT">color_blue_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="rY2~G/#Q7`m~@mn@X*AN">
+          <value name="VALUE2">
+            <shadow type="materialList" id="{dG|V0(IWOIpGEt:MXQi">
+              <field name="FIELDNAME">plastic_blue_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="o663v+ABO4M)wf@?61)?">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="TsmW!wbgB)-$@L-tqmhV">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="XEc7,5[h3!A~nZIl#gS]">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="*hL-R?=(P-w03M1CI{DB">
+                  <field name="TEXT">images/t_blue120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="%prnsQHLbRjz(t[vUkg)">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="dM}W+|9`%!~II]x,ZO:=" x="550" y="-610">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="3PjJfTmBIwqjG2?2f?l(">
+          <field name="TEXT">color_orange</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="Wk53-t{C@Pyi`J]FT6pZ">
+          <value name="VALUE2">
+            <shadow type="materialList" id="s+Tx~^W09dt/hdnj+]_6">
+              <field name="FIELDNAME">plastic_orange</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="8dCyUcw:f}^)F)yaCy}j">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="J/h|j%@/g_H6Iq8@w$LV">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="GynlCdg.VD@L5`Cyw@/=">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="_B5SM+0{KSX(lBv2S[.C">
+                  <field name="TEXT">images/orange120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="OC/H*uIaj`/zD%=MN,P$">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="U%~oSkYySRm*BqES_nfi" x="234" y="-531">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="%u-x5^r^G0}EC)szRkBx" x="993" y="-537">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Dg6*XjNM*,3Af,Mh1RtX" x="-230" y="-430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="H[ENH}!YeZ[d4?RghEej">
+          <field name="TEXT">color_white_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="829v7m68ICy$~D0Y)Q?p">
+          <value name="VALUE2">
+            <shadow type="materialList" id="GTqPrqm[(x9[e-#wZDxz">
+              <field name="FIELDNAME">plastic_white_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="]`+8rx=9ui!}lvBio`XS">
+              <field name="FIELDNAME">c9</field>
+            </shadow>
+            <block type="groupList" id=")Z!rx]lfqaY`iC/-RhB6">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="w]etbVTJdz!2T.(-1$Ps">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="$W1)*4DKXIn!6R$zX}k1">
+                  <field name="TEXT">images/t_white120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="M3VmUkYdCb_]ku-Gzu`k">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Tec_T,K}![-Z(ssYaZb3" x="550" y="-430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="W$rt_UDO(:Lo]IaYyfw5">
+          <field name="TEXT">color_green</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="}H/=X_T{cpDmb*bj9mBx">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Y,|9+_Esk3FjhjwdXNcB">
+              <field name="FIELDNAME">plastic_green</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="_EG#D?!%3HUca,KocXM-">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="tv.@v|*$(MtD.+{j*pXe">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="(a*zGp,%;.Tw@P{9c,1u">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="xT*sueys_QG/ZtR,d1oJ">
+                  <field name="TEXT">images/green120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="8Ok=sx,hM04_;s29U192">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id=";SvhL#QMu7F64H8)=D0t" x="986" y="-359">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="49qhEIsn_#b{q:nnu^TZ" x="-230" y="-270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="rwT(pSeJplm4f@hznCcT">
+          <field name="TEXT">color_green_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="db;7];3f=37PLtZ!mJ{_">
+          <value name="VALUE2">
+            <shadow type="materialList" id="9svX%(`;MVPKY{D.*]78">
+              <field name="FIELDNAME">plastic_green_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="-(_2l@Dse#Af6iiHfDt2">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="@1`ADs~nE6f=B(xJLxFi">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="M_(9FeD;.!|Z{J5nLL4Q">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="J]]ExxK35I*ebp0q[X-L">
+                  <field name="TEXT">images/t_green120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="t!uf1iTQn12]mq_XK-k[">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="O))2ja3wTY$6hxa)2=XM" x="550" y="-250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="u0Vu,6Bcz{RNh}Se9/Rs">
+          <field name="TEXT">color_blue</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="@WxNV[1y2-,sNXKuRAsn">
+          <value name="VALUE2">
+            <shadow type="materialList" id="lxCPJrc$-8o)F6UY|9I^">
+              <field name="FIELDNAME">plastic_blue</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="[.-H94*k]IT;4[JM.mT9">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="@v,0dhrb1=:E[}(S*Ox@">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="kK.Btyy#|[T./[z}]AIO">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="p@l(5mZ,,U!x/33n0Z73">
+                  <field name="TEXT">images/blue120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="9i$aT_oHHOqCLCd9snb!">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="69MvWU8LK^O/T!.1J$@M" x="251" y="-197">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="_44`{azbl,ctQk4ZxJ$R" x="979" y="-179">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Ng[|,t0AFkh$dN402@GX" x="-230" y="-90">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="L,7;*Acir*sL7v^Z}=_]">
+          <field name="TEXT">color_red_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="8p[2l;cb+v#kj)}amvv|">
+          <value name="VALUE2">
+            <shadow type="materialList" id="E|-=GhY{Wek%~`UL%Ds^">
+              <field name="FIELDNAME">plastic_red_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="lIosTAV;gVdBB|o3_6eg">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="l,!`?.{=hK8]NQmSmlo`">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="Jtwi^8/jblr#SK3_N~Tk">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="DeRQo{@ESxz6mzip=u6w">
+                  <field name="TEXT">images/t_red120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="|6qY-@_Sq8PYX8@!]{h[">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="NP$m8t].LWpY8@US`@[g" x="550" y="-70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="w#?%Cr/_)byua2q9/uA}">
+          <field name="TEXT">color_red</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="l}`2n,^;M_BmYhfU.k?K">
+          <value name="VALUE2">
+            <shadow type="materialList" id="G{u89?f?WXnew#$mZ#$Y">
+              <field name="FIELDNAME">plastic_red</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="1*$Ygy)-/|s|58Q[-n98">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+            <block type="groupList" id="mvb6sad?mh0y^l{M)JI6">
+              <field name="FIELDNAME">colors-panels</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id=")/]91+$;plTCQp8DoD6R">
+              <field name="ATTRIBUTE">src</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="Z~R7]yjP5${a:n)k3Yub">
+                  <field name="TEXT">images/red120.png</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="LcWE6`unfNfqlNf:E@HC">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="}$Wh%O^C-Fn.FDG^rRa7">
+                  <field name="TEXT">color_current</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="jdBdv8`B#sT%^`WHlohT" x="235" y="-11">
+      <field name="TEXT">color_current</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="r=k?D=b{d!2ECoJ82s~#" x="969" y="7">
+      <field name="TEXT">color_current</field>
+    </block>
+  </tab>
+  <editorsettings viewport-x="944.4" viewport-y="28" viewport-w="506.594" viewport-h="262" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,14 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="649.5" scrolly="431" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="649.5" scrolly="431" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="d(j!6bQg3.:]t+yUS#xh" x="-570" y="-350">
+      <field name="ON_OFF">ON</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="bf{-}$@iMq+$d:Fwy$AV">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="863.4" viewport-y="28" viewport-w="587.6" viewport-h="469" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

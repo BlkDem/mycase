@@ -1,0 +1,1655 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="823.1312348583718" scrolly="862" scale="0.5939794798318193">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="DxZyW_;i{*1_Esj^Mt0B" x="-1370" y="-1430">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="568.5720762852325" scrolly="448.3546395282101" scale="0.6139132535407591">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="y:j}INLE7G(g]}IbP+FW" type="">light</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Dh]e-k9g2eJpGSz6OSee" x="50" y="-630">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="]+y0b@VF+-6h1GEtsK#$">
+          <field name="TEXT">light_on</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="erqAUL)(7-wfsLmN-bYS">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="gP+Q^${#WVAf)CuX2H^v">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="{NVc@!D,o|0}yK6--_!i">
+                  <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="8H%vz]Ik|;@a0mTOriQ2">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="assignMaterial" id="QffH6*_^ul!1@8^VDBa;">
+              <value name="VALUE2">
+                <shadow type="materialList" id="OSAoSDrNsO%ZR7eU;-Cq">
+                  <field name="FIELDNAME">cooler_light_off</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="UPPgt%PE48R$,$F):@gC">
+                  <field name="FIELDNAME">cool_light1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="J.45ZhYV~L,cwE(eDD?n">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="g-[}1MWZ8$[/^@kv3uze">
+                      <field name="FIELDNAME">cooler_light_off</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="1ggGz$E7r4/d9h+KLsBM">
+                      <field name="FIELDNAME">cool_light2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="z?khW/s5QTYXZ4kaU6-O">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="]T/qQcO*rPUUE6A0h=xA">
+                          <field name="NUM">0.1</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="uHCZBLw304_av69OR}RE">
+                          <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                          <value name="VALUE">
+                            <block type="math_number" id="$V%5?iwWae$:xWd}e(!n">
+                              <field name="NUM">1</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="assignMaterial" id="sdr/i)WYb,ib434lFn#?">
+              <value name="VALUE2">
+                <shadow type="materialList" id="4Zx0{clecV}9MA33oOIA">
+                  <field name="FIELDNAME">cooler_light</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="9RzYDEL7!1$evm-{#oCw">
+                  <field name="FIELDNAME">cool_light1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="cHe1e`kPBN%SH1B3bfVa">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="5q,6TmTOC^M}csx_WHl$">
+                      <field name="FIELDNAME">cooler_light</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="%~sgup@z!siU_gdxchqt">
+                      <field name="FIELDNAME">cool_light2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="z#S^!Z2-XhVlS3[MRB[i">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="4a/0+we_?Vu*gbU6[2=[">
+                          <field name="NUM">0.1</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="K_o6kX`re*UX1jCYlwc|">
+                          <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+                          <value name="VALUE">
+                            <block type="math_number" id="N,ef*R[crJWos]HC#oAx">
+                              <field name="NUM">0</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="Ao/Haul`r59r+}L:76/W" x="-830" y="-530">
+      <value name="ID">
+        <shadow type="text" id="b]d7Eswc_`i=#Ay$F!+A">
+          <field name="TEXT">myTimer</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="#R948DNN)f5M-WV]T%b1">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id="6*?+`%xzm(phnI-~ie.2">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="d(j!6bQg3.:]t+yUS#xh">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="bf{-}$@iMq+$d:Fwy$AV">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="4JUbhzHz~ZL7~r2RAb1!" x="-270" y="-550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="gFy0l5UBd7l3cgNaYtf`">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="%]eyjw34o$pP5Rp#lq:d"/>
+      </value>
+      <statement name="DO">
+        <block type="autoRotateCamera" id="qo:s+9tOZnB$#dR0rAD}">
+          <field name="ON_OFF">OFF</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="Y@wT}b+r^n}[:Yiy?f8i">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="NP$m8t].LWpY8@US`@[g" x="-830" y="-410">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="w#?%Cr/_)byua2q9/uA}">
+          <field name="TEXT">color_red</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="/Vdsd99H%)P,DJyW4(,(">
+          <value name="VALUE2">
+            <shadow type="materialList" id="H{eTKG:x_Dzx~uJpHCoI">
+              <field name="FIELDNAME">plastic_red</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="q%BUjpoU^H1M@4ZqVq/E">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="3QB#oY0?7NWypqO@0$=.">
+              <value name="VALUE2">
+                <shadow type="materialList" id="{S;5-RagiL!EHvOx`+[X">
+                  <field name="FIELDNAME">plastic_red</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="Ib[vXz9?Z[V2ryr9TVJR">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="M?J]H_lmP8V{Q-sMNyt?">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="p!_QxsRIus!LlECxoo,:">
+                      <field name="FIELDNAME">plastic_red</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="UxR`U`+hpG__d0ao03Bi">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="P^_sxwYI|E{Rqkx4b~ML">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="~6VU+KOuR!+~HIH:{%~q">
+                          <field name="FIELDNAME">plastic_red</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="}Q[-n?o|AtgpAf^#-=qk">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="Wcx*0oL,)C6)tX:q@DLF">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="7}~TeLzMth}81GmuKZ*Y">
+                              <field name="FIELDNAME">plastic_red</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="P|U_l=qE[7dg}Q]*7z~l">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="KW1(Wo6i@o^^W,Tb{h(/">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="Bjo$u5CDS(=UoqV~Ox7f">
+                                  <field name="FIELDNAME">plastic_red</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="+u.@6=[zNMkBLC*[9|Yq">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="`0;+ZuI?RUg0HF_foTI)">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="j0q1rY..I?f!CbRCpRuH">
+                                      <field name="FIELDNAME">plastic_red</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="+mKd3q^_b6{Ng;]_a#W[">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="UA.}ECj+7r0DZyObq]OX">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="Dy?;4~cgCm|`@rM~[Fa|">
+                                          <field name="FIELDNAME">plastic_red</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="z_a4d[XC{9t*bwDWvFp!">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="FByd?+Pbc@AJHIX$V0B4">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="+jJJBlR);4N^y[yc[)qf">
+                                              <field name="FIELDNAME">plastic_red</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="#)6v-Nk/{RX#2D9juf(}">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="QmU1jiqEHSe$jkP/q[mh">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="or@!D-V;j6g[YWS;oFX3">
+                                                  <field name="FIELDNAME">plastic_red</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id=",gJ]l:pL0B;u!j3(YOs@">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="B^Y1N6Hs0F^HBa.%.k_G">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="mFM,/YZgp2KZ?}L#zgS$">
+                                                      <field name="FIELDNAME">plastic_red</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="r`A.ngQ~HNhAL{kpZOdu">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id=")/]91+$;plTCQp8DoD6R">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="Z~R7]yjP5${a:n)k3Yub">
+                                                          <field name="TEXT">images/red120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="LcWE6`unfNfqlNf:E@HC">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="}$Wh%O^C-Fn.FDG^rRa7">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="O))2ja3wTY$6hxa)2=XM" x="-750" y="-370">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="u0Vu,6Bcz{RNh}Se9/Rs">
+          <field name="TEXT">color_blue</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="XRA6M_(1xg/V,XHju=XD">
+          <value name="VALUE2">
+            <shadow type="materialList" id="CO`Ue147[X^nR(di2y2.">
+              <field name="FIELDNAME">plastic_blue</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="r./:8FnqnVRDNT~/fq!h">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="!KN[|+q5+J+.BK88QI7V">
+              <value name="VALUE2">
+                <shadow type="materialList" id="6#Yj%@=-RaX$IEh{Iv2k">
+                  <field name="FIELDNAME">plastic_blue</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="VqBMFsH7uK[PloG4iRab">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="5|2m@se8;jNa~SW(vef)">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="C1PF]a*lUom$3W*W_hKz">
+                      <field name="FIELDNAME">plastic_blue</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="G5~I$Cu%R*j]NE;$NAS+">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="D],-eQ0r!zIV3YJW4Bht">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="{ETtiV/0kA~u$kWZ?S3K">
+                          <field name="FIELDNAME">plastic_blue</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="C1h9h?D%?ORUUIG1%FgJ">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="j6GVJyJrAxv[_{ha1XB-">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="UuqF9JM6M{g?t8x*3+;8">
+                              <field name="FIELDNAME">plastic_blue</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="1a/ze)$OH$yj@p+NnqQ2">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="+4ene`I3psJ-FbL}qNej">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="(4SEU1TT8X%FroIPi`sG">
+                                  <field name="FIELDNAME">plastic_blue</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="Fogt2S|q9MLe2snAWD8h">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="V9y0C0J9!1m~0sKk2-|?">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="4yd|P?C%vvE3,S4d4y_/">
+                                      <field name="FIELDNAME">plastic_blue</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="`~zteTtxX$j9*Ixdw]D=">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="]hMW!2*$W{m*{w5N[@$5">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="lGQ8,4fbXSp/?jP94a8,">
+                                          <field name="FIELDNAME">plastic_blue</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="a)x+?)j}.a|d0GpGbyzH">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="S7AyFrwCWpQ#aZYh~{_w">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="(6R*^iZ5uQ!wZoC_m-Xr">
+                                              <field name="FIELDNAME">plastic_blue</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="YprT.@T`u^lz^qp]b`R5">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="2yT#0atJaf~cN8Pr]{wf">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="-6ia?y(3r)ZuWkie=bvS">
+                                                  <field name="FIELDNAME">plastic_blue</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="w#g.51H$4yrXz*nGGM9R">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="+8m,]6Uao%nGM~8)-d5@">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="l]VkaAgzX3%fa-h`n4D}">
+                                                      <field name="FIELDNAME">plastic_blue</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="Z?UkP#zLOLr/#Lpmcx!n">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="kK.Btyy#|[T./[z}]AIO">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="p@l(5mZ,,U!x/33n0Z73">
+                                                          <field name="TEXT">images/blue120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="9i$aT_oHHOqCLCd9snb!">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="]mMN.-C3jL7gC}1Xz~K@" x="-190" y="-390">
+      <field name="VAR" id="y:j}INLE7G(g]}IbP+FW">light</field>
+      <value name="VALUE">
+        <block type="math_number" id="[aZ+?8*6i}w9a,*}{:tZ">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Tec_T,K}![-Z(ssYaZb3" x="-650" y="-270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="W$rt_UDO(:Lo]IaYyfw5">
+          <field name="TEXT">color_green</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="pNW^ZqIZVW,NFfHDQ+E;">
+          <value name="VALUE2">
+            <shadow type="materialList" id="6Olq!2M/tC,[p.8R.rQW">
+              <field name="FIELDNAME">plastic_green</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="5m3CqD(;F4nQrHek?eQ)">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="gt)J?a;V,C@lfk17-%/V">
+              <value name="VALUE2">
+                <shadow type="materialList" id="`LxRUb8Kh)W/4dvwiaoh">
+                  <field name="FIELDNAME">plastic_green</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="jK$5a^Ml*=;syr%ev{s`">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="D3X`f;?QrE~I@-t^=NYx">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="Mz^?(e*|,(llk`LNQs7R">
+                      <field name="FIELDNAME">plastic_green</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="Lmwk!9Fkq?C~o]*)r]P[">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="$qlW@9yuOu?P2=Jb(i*J">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="H#iZ*sK08%*1@XW8+rfp">
+                          <field name="FIELDNAME">plastic_green</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="g#VC*zPnq(Xvw$L2qCgY">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="O-Up,,fuCfmwi9z99dH/">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="ksRfvAl]~nu-7g_XB)KE">
+                              <field name="FIELDNAME">plastic_green</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="L:W#OqL+H:n|m$K;_A?4">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="}/l[O]L(rPyzp!y_x1|$">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="]Q0ges`ViiJOP[vH(Wq/">
+                                  <field name="FIELDNAME">plastic_green</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="EIH~@T]1Z5T!lK^LF~[;">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="9cX@|Wd_4X`T.pTVwrZk">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="S?7B`Mwl!ib[KJ//,)P(">
+                                      <field name="FIELDNAME">plastic_green</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="}DMiNKL(ab8!2zq]l@)}">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="lE7+C_g6)oi4snX!fafT">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="`;|InEM1b3}7?EOebF*i">
+                                          <field name="FIELDNAME">plastic_green</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="E.l]O?oqUp2Cb05GsqdV">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="$cx_zSR7{VYDKlaUvZ/7">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="R9fS7zo#0~:TD5*gQv?{">
+                                              <field name="FIELDNAME">plastic_green</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="Ws(C:M}exT?L6h23rC+|">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="gWp.j.zV`~p?Q5OG~kA@">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="8*6~`cSw]zRT!NqMqdxe">
+                                                  <field name="FIELDNAME">plastic_green</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="_CL,:*nzFOz@-:*$2;g#">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="ZoSSjOFM5M,fK{_j!)[6">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="%[^8P-Stlbq2cnu.opd?">
+                                                      <field name="FIELDNAME">plastic_green</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="bVe=b^$)[ILq72!rWd2_">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="(a*zGp,%;.Tw@P{9c,1u">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="xT*sueys_QG/ZtR,d1oJ">
+                                                          <field name="TEXT">images/green120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="8Ok=sx,hM04_;s29U192">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Ng[|,t0AFkh$dN402@GX" x="-70" y="-150">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="L,7;*Acir*sL7v^Z}=_]">
+          <field name="TEXT">color_red_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="c|7NmXX]_t^sc*jl@T;_">
+          <value name="VALUE2">
+            <shadow type="materialList" id="V}YS)#A4Vdlr72wko.CV">
+              <field name="FIELDNAME">plastic_red_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="?nDqfo52U[2vOkO24m8C">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id=")OZv5xij`r?:=kY[Ttno">
+              <value name="VALUE2">
+                <shadow type="materialList" id="@%|nLU8V4Q_@Yl8-:SHL">
+                  <field name="FIELDNAME">plastic_red_clear</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="a/G9FwC|*`Ry]SL^`xD=">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="kwN/x6zp8k@OT6CxzzkJ">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="[$}8d8+%#qd)XRo^[Vu,">
+                      <field name="FIELDNAME">plastic_red_clear</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="N!!j_gXxVAnlzX+R;do]">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="}$UfCHQze?jNN7kCBAf@">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id=",.s%-MOm8#od|H,t*}zm">
+                          <field name="FIELDNAME">plastic_red_clear</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="lRd?SB1GD`M0-e%=IL/{">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="wot`Jbsj`iSd(sBz(|6?">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="H.8?*Ccv6W63X$9#GN^.">
+                              <field name="FIELDNAME">plastic_red_clear</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="t};*NsSIHL[90Xa2w_Bs">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="gL#~-)9?mAf]h764=q)m">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id=",AQJ:7bUi%9@z+J]7AG*">
+                                  <field name="FIELDNAME">plastic_red_clear</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="nRXGzt{#ON+L3Uzq^eW)">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="9qm#p^VotP.z=Y)5e7,|">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="dw~)5zh$_R$7_K%-YbGe">
+                                      <field name="FIELDNAME">plastic_red_clear</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="WH,qYl1{b`x5EKTPEwO?">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="mG)=i8J)P;_D+R7)y+I~">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="@kC:JJ@fxiTNUIH=p84e">
+                                          <field name="FIELDNAME">plastic_red_clear</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="([D}0%2)jfXJ]*O?gvZ)">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="6H_4jh%98z!VAdJF0Av3">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="Y+@,:FVNnba4$}Fhb$Ej">
+                                              <field name="FIELDNAME">plastic_red_clear</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id=";S.=}0.9o`lHfRQ3r)0*">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="GRj(n3~uXF6}$k!W-6(K">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="sMfW@4xICgn$r86No]7d">
+                                                  <field name="FIELDNAME">plastic_red_clear</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="hnOk4z~/z$c_[{%wx1gh">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="HB#Zq1gsX02OKE4;m-mk">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="P](vkS]mkm:9LcnHb./q">
+                                                      <field name="FIELDNAME">plastic_red_clear</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="#g}Y*k0LJPS].BOX~S%7">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="Jtwi^8/jblr#SK3_N~Tk">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="DeRQo{@ESxz6mzip=u6w">
+                                                          <field name="TEXT">images/t_red120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="|6qY-@_Sq8PYX8@!]{h[">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="49qhEIsn_#b{q:nnu^TZ" x="15" y="18">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="rwT(pSeJplm4f@hznCcT">
+          <field name="TEXT">color_green_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="[P1Jv|#MNL4NMTjk87~G">
+          <value name="VALUE2">
+            <shadow type="materialList" id="[EUNf1sZs!Xtl*4:eQv_">
+              <field name="FIELDNAME">plastic_green_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="bZs5E)J0)87*PqjN;c-M">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="6d1Dg7S2z,UP?/s-iiK#">
+              <value name="VALUE2">
+                <shadow type="materialList" id="eDU,WhC:Se^2i@_uzs(c">
+                  <field name="FIELDNAME">plastic_green_clear</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="R]9X_SCU9{1YdGzM,vNX">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="-rD:lrissE02e{A~!+HE">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="k_$eKRog2iz,bamzR}25">
+                      <field name="FIELDNAME">plastic_green_clear</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="qpADR5|FGiSEEh`oUoeB">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="0gK3;6LNI*EgUgazKbD(">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="dgU,1t:6#kM{Ny4Pdm|r">
+                          <field name="FIELDNAME">plastic_green_clear</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="G{u6x6Ne(+oxXrlv]7.c">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="{xaKf*t%GvYUVcn3s0Q%">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="k5@*u+*6tJj2EE,8YZS-">
+                              <field name="FIELDNAME">plastic_green_clear</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="R3ffM-aUfD!do0s:j`11">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="~!vlmD3Qc|kVip#}Oo5T">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="%.c)45mtn=$i)?B8c151">
+                                  <field name="FIELDNAME">plastic_green_clear</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="dV$@rp%7|?wRFB,nb@dx">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="vcu{BZ[OqJ$Qth?wMcS`">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="VTGr@7h%sG6,6,@aYqiI">
+                                      <field name="FIELDNAME">plastic_green_clear</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="(geGX|eoVj+ze?K4MBDm">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id=",$XZ${[4#w)=N,D-f:c@">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="0%9tnGY_f[%(*KL3+mfG">
+                                          <field name="FIELDNAME">plastic_green_clear</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="iTU]*@dj6MI)ql)7MG.e">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="%T|G(X.o*l!F(|]vj*/B">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="zTQyupWoP*0DK8qu(T)[">
+                                              <field name="FIELDNAME">plastic_green_clear</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="hrZ.5a~Di|y0_oDl5|Q8">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="WCy?9*zjp+#LNp`%|r]b">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="JmSxm5th[:#?gg(m2kD[">
+                                                  <field name="FIELDNAME">plastic_green_clear</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="pstjB_Be`Ly?jto[$CSl">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="%aq)icU/yIGa:+;)RkP@">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="(+*lngk8P|/(IMSO{pVy">
+                                                      <field name="FIELDNAME">plastic_green_clear</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="twBX,rT%$8s;q$c,fSBh">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="M_(9FeD;.!|Z{J5nLL4Q">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="J]]ExxK35I*ebp0q[X-L">
+                                                          <field name="TEXT">images/t_green120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="t!uf1iTQn12]mq_XK-k[">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="dM}W+|9`%!~II]x,ZO:=" x="-870" y="170">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="3PjJfTmBIwqjG2?2f?l(">
+          <field name="TEXT">color_orange</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="!yz;}|%U0WBZxaoygabl">
+          <value name="VALUE2">
+            <shadow type="materialList" id="pFv;[V):pl0.,Q:A9(:w">
+              <field name="FIELDNAME">plastic_orange</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="Kq0S(rL7zAN095%p*Z9V">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id=")4*@K#.8hCEj2CkR!Y)=">
+              <value name="VALUE2">
+                <shadow type="materialList" id="vE1.n3^)}UFZ{5!bnagA">
+                  <field name="FIELDNAME">plastic_orange</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="g-b7LvW$ao%Zw=-_0;;]">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="5r]9t{~fJsaumc(n}rUL">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="s|c$5^1*E!bAXux_nW%;">
+                      <field name="FIELDNAME">plastic_orange</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="0E|x7,g@K6zMqu{)q]K(">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="03NB{_@uJGeq[VK{cJ)C">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="X.~xH6RW-HH/vqS=%(OH">
+                          <field name="FIELDNAME">plastic_orange</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="7sfrp5|FG-8PCOP{ml*i">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="6(IrJQ5)M;QB,]6-j=eR">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="[+Mj9eh2Ns;^:5hG1Bgg">
+                              <field name="FIELDNAME">plastic_orange</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="xZaUGp9x2/])KLh(|SN[">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="G[n8wi{Jk/ZwA+YQ(([3">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="5BfiAd|/6Xu~eQu-AQ5J">
+                                  <field name="FIELDNAME">plastic_orange</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="@fyYLkEmP+EcL=XS?u_W">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="K:srM+BZO}g)1~149)4H">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="YG$e3f!eC!P/%Uf87*jj">
+                                      <field name="FIELDNAME">plastic_orange</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="|/%@6YgCuqH`}*q]G@FK">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="`,Y$/.KywN@USw@.|LFD">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="AvFd-V;cM!`fO:dVo1(g">
+                                          <field name="FIELDNAME">plastic_orange</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="fm0CE|vS(Lg9v(,?Yqim">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="Gq$TPu]?);d;7mqPkTSp">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="F}~QU,7l6VyKtVhu$amA">
+                                              <field name="FIELDNAME">plastic_orange</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="6eGF{S3j1{Df7_pOn~ZM">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="{V5k[Y$4U{-L$I9O,HwU">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="6)SrkTU9/N9IM9cmtdkc">
+                                                  <field name="FIELDNAME">plastic_orange</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id=":KXXT_d!-!/BfLdO0dDd">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id=",UjVfy:y7!Voy^nRJmr9">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="pdWOXp/*RxD94.OnPCUS">
+                                                      <field name="FIELDNAME">plastic_orange</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="zgpopH(btW{%1evt2jP=">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="GynlCdg.VD@L5`Cyw@/=">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="_B5SM+0{KSX(lBv2S[.C">
+                                                          <field name="TEXT">images/orange120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="OC/H*uIaj`/zD%=MN,P$">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="tf/c;`Czt*MAd%.PB84." x="99" y="186">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="mS%pbVg%jmovQlk!}`xX">
+          <field name="TEXT">color_blue_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="`}lHuh+J=iD=KpcMyJ$?">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Q`zz;mmlJxtm011r%2+{">
+              <field name="FIELDNAME">plastic_blue_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="d/V:587wJXUFL^b1m0ii">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="L9bKp|)#{+a9?z=~/r%y">
+              <value name="VALUE2">
+                <shadow type="materialList" id="n.2:Ai1sx2kna=i0bkM]">
+                  <field name="FIELDNAME">plastic_blue_clear</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="XqcL_+=gRuISBkj[Bcpk">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="toc}/FZ]0aFW1*dTtwV=">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="Gv4BXrDJ%VDCUh1=-eq(">
+                      <field name="FIELDNAME">plastic_blue_clear</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="zhLEZ1)K!WB~_{?OUqzp">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="gf}c7LU;Zi4?oIX`_t|w">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="5p#Xnmp?b(rcK@[3Z3OJ">
+                          <field name="FIELDNAME">plastic_blue_clear</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="oFo!G8v}J^c:B/!x%nE^">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="n:$XJ=N?9x+G}ed0dILz">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="Pxg^VSiZv/S9Qu/ZR5P!">
+                              <field name="FIELDNAME">plastic_blue_clear</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="kZzZO_W4ZDt4?Hfx=:SF">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="-?DGCE+CCgY*o+c|]mIp">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="G#+?d0;|6ua~7et/Y]%t">
+                                  <field name="FIELDNAME">plastic_blue_clear</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="@x$SPA:/N~QkSm3]mw(/">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id=")u]}:CH1Nmw[D[!RxZi,">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="rFN+nJE$%kN+#NmV3Ovc">
+                                      <field name="FIELDNAME">plastic_blue_clear</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="av1`w-@yr{h7XT01Y7w=">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="qoYIlecQ|J81+{2:nYZG">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="]C4I^TWaRvKr,:Yi5+-1">
+                                          <field name="FIELDNAME">plastic_blue_clear</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="wIMQ:T1yw/7l*Dh1${KF">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="ex;KE]McNpC;1d4W#^n+">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="+4HOMtj~^J@}*/bulm(=">
+                                              <field name="FIELDNAME">plastic_blue_clear</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="F}1:bNcl~~`Xq%sg8fbJ">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="PRk-QXcwR}dLU|cE.mVa">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="THP,E%RX!;[l%pWxHNhf">
+                                                  <field name="FIELDNAME">plastic_blue_clear</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="I}.U.NAjVlHH95wC(c?w">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="oa_,|1SBGM+IaRz$%/*(">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="5#f%4#|0_./+..e35,dM">
+                                                      <field name="FIELDNAME">plastic_blue_clear</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="K0)8JX~0HQ$C9a?:MZ;%">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="XEc7,5[h3!A~nZIl#gS]">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="*hL-R?=(P-w03M1CI{DB">
+                                                          <field name="TEXT">images/t_blue120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="%prnsQHLbRjz(t[vUkg)">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Dg6*XjNM*,3Af,Mh1RtX" x="183" y="354">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="H[ENH}!YeZ[d4?RghEej">
+          <field name="TEXT">color_white_clear</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="@cYrH.-E!L|+Hx)[N#=]">
+          <value name="VALUE2">
+            <shadow type="materialList" id="pld/lTQ]B(VsUBXb8C](">
+              <field name="FIELDNAME">plastic_white_clear</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="ca))`h!*.S7f5be^{Hr]">
+              <field name="FIELDNAME">c1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="j?;wU0IRYpVy3RrmY^8e">
+              <value name="VALUE2">
+                <shadow type="materialList" id="JM:7U[*lC92;Jb*Vv9?^">
+                  <field name="FIELDNAME">plastic_white_clear</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="@)Z!rm@l]pOg;6B,{!7c">
+                  <field name="FIELDNAME">c2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="OYnU=fs;r6uxM1rZ)W(o">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="{{T=`DMjVOJ:H{eE~C{(">
+                      <field name="FIELDNAME">plastic_white_clear</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="c)[F)JV8muTd:1{#^L6H">
+                      <field name="FIELDNAME">c3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="qODu?nvt=1|yk=rl-c=m">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="{*2oR}h?]{%(.,M)m:c+">
+                          <field name="FIELDNAME">plastic_white_clear</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="]E5f-c!Pz~;8?Hebrq8c">
+                          <field name="FIELDNAME">c4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="/h.D#vf2awyQ_~4`P%0E">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="9rH@++k}-K0(!Yt8qVB/">
+                              <field name="FIELDNAME">plastic_white_clear</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="B2T-0}hnH{4|WrZzzR]|">
+                              <field name="FIELDNAME">c5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="Z+d5OM*Om.):~c?JnURd">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="*p8J%z2jHUgn{SRTo-fT">
+                                  <field name="FIELDNAME">plastic_white_clear</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="#fdm/F3#;lRi@lryM79{">
+                                  <field name="FIELDNAME">c6</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="ed};1M)$Zb:}Jf9KoE+I">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="jur8|Mw4*o6.]Y|9(+ke">
+                                      <field name="FIELDNAME">plastic_white_clear</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="*ao/Dij*QgaBZrzpmcU^">
+                                      <field name="FIELDNAME">c7</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="I+uSg)_xt9I]Ybb-1Obn">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList" id="t,#x?OZvTk2/UOZqXLjc">
+                                          <field name="FIELDNAME">plastic_white_clear</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList" id="-[0d+Wrf;5aJHW9ZAOyP">
+                                          <field name="FIELDNAME">c10</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="GbZ$bCXJA;A-/l(+JXNv">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList" id="6B(Y4_;_(8M~!gmP$Ys:">
+                                              <field name="FIELDNAME">plastic_white_clear</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList" id="X{`%gW;DYt+or$1`0;/!">
+                                              <field name="FIELDNAME">c11</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="assignMaterial" id="}=y;!N59,!7nl(Wo*5Fq">
+                                              <value name="VALUE2">
+                                                <shadow type="materialList" id="ZaOOHZ7tflpSL)vtzzGt">
+                                                  <field name="FIELDNAME">plastic_white_clear</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE1">
+                                                <shadow type="objectList" id="zbKN_Q%8WMKADPeF3*[R">
+                                                  <field name="FIELDNAME">c8</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="assignMaterial" id="6NKA_=-e*07odDK$u4N.">
+                                                  <value name="VALUE2">
+                                                    <shadow type="materialList" id="nPOD}wV3qD(f3JF1lm(+">
+                                                      <field name="FIELDNAME">plastic_white_clear</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE1">
+                                                    <shadow type="objectList" id="`Dy1c2na$M2PAv0[(+|F">
+                                                      <field name="FIELDNAME">c9</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setHTMLElemAttribute" id="w]etbVTJdz!2T.(-1$Ps">
+                                                      <field name="ATTRIBUTE">src</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="VALUE">
+                                                        <block type="text" id="$W1)*4DKXIn!6R$zX}k1">
+                                                          <field name="TEXT">images/t_white120.png</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text">
+                                                          <field name="TEXT"/>
+                                                        </shadow>
+                                                        <block type="text" id="M3VmUkYdCb_]ku-Gzu`k">
+                                                          <field name="TEXT">color_current</field>
+                                                        </block>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="944.4" viewport-y="28" viewport-w="506.594" viewport-h="262" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

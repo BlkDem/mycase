@@ -1,0 +1,305 @@
+/* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
+@font-face {
+	font-family: 'Loaded';
+	src: url('../fonts/loaded.ttf');
+}
+body {
+    margin: 0px;
+    overflow: hidden;
+	font-family: play;
+	font-size: 18px;
+	color: green;
+	background-color: white;
+}
+
+a, a:active, a:hover
+{
+	color: #0090e7;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+	color: #669a86;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.glow
+{
+	text-shadow:
+      0 0 7px #fff,
+      0 0 10px #000,
+
+      0 0 42px #0fa;
+}
+
+h1
+{
+	color: #eee;
+	font-family: 'Loaded', Arial;
+	font-size: 4em;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+h2
+{
+	color: white;
+
+	font-size: 3em;
+	font-family: 'Loaded', Arial;
+}
+
+#v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.preloader-div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 50%;
+}
+
+.preloader-container {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  width: 260px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.preloader-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background-color: rgb(50, 180, 80);
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+.left-colors {
+	width: 64px;
+	height: 50%;
+	position: absolute;
+}
+
+.colors-buttons
+{
+	width: 64px;
+	height: 300px;
+	margin-bottom: -150px;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	right: auto;
+	top: auto;
+}
+
+.screenshot-button
+{
+	border: 1px solid silver;
+	border-radius: 5px;
+	width: 80px;
+	height: 80px;
+
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.colors-images
+{
+	border: 1px solid silver;
+	border-radius: 5px;
+	width: 64px;
+	height: 64px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.preset-images
+{
+	border: 1px solid silver;
+	border-radius: 5px;
+	width: 32px;
+	height: 32px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.sshot-image
+{
+	height: 160px;
+	width: auto;
+	position: absolute;
+	top: auto;
+    bottom: 0%;
+	margin-left: 12px;
+	border: 1px solid silver;
+	border-radius: 6px;
+}
+
+.logo-image
+{
+	position: absolute;
+	top: 0;
+    right: 0;
+	margin-left: 12px;
+	margin-top: 12px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.light-image
+{
+	position: absolute;
+	top: 0;
+    right: 0;
+	margin-right: 12px;
+	margin-top: 8px;
+	width: 96px;
+	height: 96px;
+	cursor: pointer;
+	z-index: 5;
+}
+
+
+.close-screenshot
+{
+bottom: 0;
+    position: absolute;
+    /* margin-top: -140px; */
+    margin-left: -12px;
+    margin-bottom: 154px;
+    font-weight: 400;
+}
+
+.bottom-panel
+{
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	top: auto;
+    bottom: 0%;
+	margin-left: 12px;
+
+}
+.top-panel
+{
+	/* height: 128px; */
+	width: 100%;
+	position: absolute;
+	margin-left: 12px;
+	margin-top: 12px;
+	top: 0;
+    z-index: 1000;
+}
+
+.left-panel
+{
+	height: 50%;
+	width: 100px;
+	position: absolute;
+	margin-left: 12px;
+	margin-top: 100px;
+
+}
+
+.bottom-panel-menu
+{
+	text-align: center;
+}
+
+.menu-dropdown-button
+{
+	width: 32px;
+	height: 32px;
+	text-shadow: 1px 1px 2px black;
+}
+.menu-shadow
+{
+	text-shadow: 1px 1px 2px black;
+}
+
+.case-dropdown-button
+{
+
+	width: 64px;
+	height: 64px;
+	text-shadow: 1px 1px 2px black;
+	magrin-top: 10px;
+	magrin-left: 10px;
+}
+.case-images
+{
+	border: 1px solid silver;
+	border-radius: 5px;
+	width: 96px;
+	height: 96px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+.hide {
+   display: none;
+}
+.show {
+	display: inline-block;
+}
+
+.main-caption {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .main-caption {
+    position: absolute;
+    bottom: 30px;
+	top:auto;
+  }
+}
+.toppanel {
+	border: 4px solid;
+    border-radius: 49px;
+    padding: 12px 42px;
+    background: rgba(10,10,10,.8);
+}
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
